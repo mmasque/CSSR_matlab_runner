@@ -5,7 +5,7 @@ complexities = [];
 timestamps = [];
 for i = 2:9
     tic
-    complexities = [complexities run_CSSR(DATA, "binary01-alphabet.txt", i, "face_nonface_together", false)];
+    complexities = [complexities run_CSSR(DATA, "binary01-alphabet.txt", i, "face_nonface_together", true)];
     td = toc;
     timestamps = [timestamps td];
 end
