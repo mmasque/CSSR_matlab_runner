@@ -49,10 +49,7 @@ with_txt = strcat(dataset_FName, ".txt");
 change_name = strcat("mv ", with_txt," ", dataset_FName);
 system(change_name)
 call_CSSR = strcat("CSSR ", alphabet_FName, " ", dataset_FName, " ",...
-    num2str(L_Max));
-if multiline
-    call_CSSR = strcat(call_CSSR, " -m");
-end
+    num2str(L_Max), " -m");
 system(call_CSSR)
 
 info_fname = strcat(dataset_FName, "_info");
