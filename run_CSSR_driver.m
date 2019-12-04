@@ -1,3 +1,6 @@
+
+
+load("example_dataset.mat");
 complexities = [];
 timestamps = [];
 for i = 2:9
